@@ -5,12 +5,10 @@
     <title><%= lipsum_wanted %></title>
   </head>
   <body>
-    <p>
       <% if paragraphs_needed >= 2 %>
         <%= output * paragraphs_needed %>
       <% else %>
         <%= output %>
       <% end %>
-    </p>
   </body>
 </html>
