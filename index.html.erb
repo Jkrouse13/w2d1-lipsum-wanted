@@ -6,7 +6,11 @@
   </head>
   <body>
     <p>
-      <%= output %>
+      <% if paragraphs_needed >= 2 %>
+        <%= output * paragraphs_needed %>
+      <% else %>
+        <%= output %>
+      <% end %>
     </p>
   </body>
 </html>
