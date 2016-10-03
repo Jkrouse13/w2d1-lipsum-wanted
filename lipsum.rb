@@ -1,6 +1,7 @@
+#!/usr/bin/env ruby
 require 'erb'
 
-lipsum_wanted = ARGV[0].downcase
+lipsum_wanted = ARGV[0].to_s.downcase
 
 paragraphs_needed = ARGV[1].to_i
 
