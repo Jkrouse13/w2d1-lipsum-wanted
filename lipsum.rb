@@ -29,7 +29,7 @@ if lipsum_wanted == "classic"
     puts "Please choose classic , hipsum, or fillerama"
 end
 
-
+IO.popen('pbcopy', 'w') {|pipe| pipe.puts output}
 
 
 
